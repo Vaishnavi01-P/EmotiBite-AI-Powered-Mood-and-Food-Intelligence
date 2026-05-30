@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Local Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+server/.env
+ai-service/.env
+
+# Production Builds
+client/build/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Python Caches
+__pycache__/
+*.pyc
+ai-service/__pycache__/
+ai-service/services/__pycache__/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log

@@ -1,0 +1,22 @@
+{
+  "name": "moodfood-ai",
+  "version": "1.0.0",
+  "description": "AI-powered mood analysis and food recommendation system",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run ai-service\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "ai-service": "cd ai-service && python app.py",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install && cd ../ai-service && pip install -r requirements.txt",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "setup": "npm run install-all"
+  },
+  "keywords": ["ai", "mood", "food", "recommendations", "health"],
+  "author": "MoodFood AI Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

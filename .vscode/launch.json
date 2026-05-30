@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "MoodFood: Run All (Dev)",
+            "request": "launch",
+            "type": "node-terminal",
+            "command": "npm run dev",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "MoodFood: Backend Server",
+            "request": "launch",
+            "type": "node-terminal",
+            "command": "npm run server",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "MoodFood: Frontend Client",
+            "request": "launch",
+            "type": "node-terminal",
+            "command": "npm run client",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
